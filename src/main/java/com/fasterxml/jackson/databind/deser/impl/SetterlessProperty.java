@@ -143,7 +143,7 @@ public final class SetterlessProperty
     
     @Override
     public final void set(Object instance, Object value) throws IOException {
-        throw new UnsupportedOperationException("Should never call 'set' on setterless property");
+        throw new UnsupportedOperationException("Should never call 'set' on setterless property " + getName());
     }
 
     @Override
